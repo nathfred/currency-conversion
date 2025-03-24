@@ -26,10 +26,15 @@ export const fetchPriceFromUniswap = async (targetNetwork: ChainWithAttributes):
     return 0;
   }
   try {
-    const DAI = new Token(1, "0x6B175474E89094C44Da98b954EedeAC495271d0F", 18);
+    console.log("targetNetwork.nativeCurrency : ");
+    console.log(targetNetwork.nativeCurrency);
+    console.log("targetNetwork.nativeCurrencyTokenAddress : ");
+    console.log(targetNetwork.nativeCurrencyTokenAddress);
+
+    const DAI = new Token(1, "0x6B175474E89094C44Da98b954EedeAC495271d0F", 18); // DAI
     const TOKEN = new Token(
       1,
-      targetNetwork.nativeCurrencyTokenAddress || "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      targetNetwork.nativeCurrencyTokenAddress || "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", // WETH
       18,
     );
     const pairAddress = Pair.getAddress(TOKEN, DAI) as Address;
