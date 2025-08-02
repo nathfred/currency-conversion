@@ -5,7 +5,28 @@
   <a href="https://scaffoldeth.io">Website</a>
 </h4>
 
-🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
+Project Overview:
+
+Currency Conversion is a decentralized web application built on top of Scaffold-ETH 2, designed to provide real-time Ethereum (ETH) to fiat currency conversions. This project bridges on-chain Ethereum data with off-chain fiat currency values, allowing users to view the current ETH price in multiple fiat currencies through a clean and responsive interface.
+
+Key Features:
+Real-time ETH Price Tracking: Fetches and displays the latest Ethereum price against a wide range of fiat currencies.
+Integration with RafaelCaso’s Currency Conversion API: Utilizes the RafaelCaso/currency-conversion-extension API for accurate and up-to-date conversion rates.
+Scaffold-ETH 2 Powered: Leverages Scaffold-ETH 2's modern development stack for rapid prototyping and a seamless Web3 UX.
+Responsive Frontend UI: User-friendly interface that shows ETH price conversions in an intuitive table or card layout.
+Ethereum Connected: Live wallet connection support using wagmi/hooks to reflect user's wallet status (optional extension).
+
+Tech Stack:
+Frontend: React, Tailwind CSS (via Scaffold-ETH 2)
+Web3 Library: Wagmi, ethers.js
+Backend API: RafaelCaso Currency Conversion Extension (REST API)
+Scaffold-ETH 2: For smart contract interactions (even though this project focuses on off-chain data display)
+Deployment: Vercel / Netlify / Localhost Dev Environment
+
+Use Cases:
+ETH price monitoring in local fiat currencies.
+Educational showcase of integrating Web2 APIs into Web3 dApps.
+Starter template for building financial dashboards on Scaffold-ETH 2.
 
 ⚙️ Built using NextJS, RainbowKit, Hardhat, Wagmi, Viem, and Typescript.
 
